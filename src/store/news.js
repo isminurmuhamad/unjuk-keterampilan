@@ -27,16 +27,10 @@ const mutations = {
   fetchByCategory(state, param) {
     state.headers["category"] = param;
     state.headers["q"] = "";
-    router.push({
-      name: "home",
-    });
   },
   fetchByKey(state, param) {
     state.headers["category"] = "";
     state.headers["q"] = param;
-    router.push({
-      name: "home",
-    });
   },
 };
 const actions = {
